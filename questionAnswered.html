@@ -41,9 +41,13 @@
 			font-size: 12px;
 			outline: none;
 			border: none;
+			margin-top: 16px;
+			margin-inline: auto;
 		}
 		.main_message {
 			padding: 24px;
+			display: flex;
+			flex-direction: column;
 		}
 
 		h1 {
@@ -56,9 +60,6 @@
 		img.action {
 			width: 100%;
 			height: auto;
-		}
-		p {
-			color: #05090d;
 		}
 		footer {
 			background-color: #f1f3f7;
@@ -81,6 +82,17 @@
 			display: flex;
 			gap: 17.5px;
 		}
+		h4 {
+			font-size: 14px;
+			margin-top: 16px;
+		}
+		a {
+			text-decoration: none;
+			color: #1081f2;
+		}
+		p {
+			color: #05090d;
+		}
 	</style>
 	<body>
 		<header class="header">
@@ -90,18 +102,23 @@
 
 		<main>
 			<div class="main_message">
-				<h1>Hello Jeremiah</h1>
+				<h1>We’ve answered your question!</h1>
+				<h4>Hello Jeremiah,</h4>
 				<p class="message">
-					Stranerd classes are designed to give you the best class experience to
-					ensure you have everything you need for school in one plate.
-					<br />
-					<br />
-					Create a class today to collaborate with your coursemates.
+					<a href="#">Timmy Salami</a>
+					has provided an answer to your question:
 				</p>
-				<button class="btn-lg">Create a Class</button>
-			</div>
+				<img src="./questionAnswered.png" alt="action  image" class="action" />
+				<button class="btn-lg">View answer</button>
 
-			<img src="./infomative.png" alt="action  image" class="action" />
+				<p class="message">
+					Login to your Stranerd account to view the full solution. Don’t forget
+					to award the best answer.
+					<br />
+					<br />
+					Team Stranerd.
+				</p>
+			</div>
 		</main>
 
 		<footer>
