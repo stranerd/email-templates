@@ -1,12 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stranerd Infomative Email</title>
-</head>
-<body>
-    
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Stranerd Infomative Email</title>
+	</head>
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+		* {
+			font-family: 'DM Sans', sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+		body {
+			min-height: 100vh;
+			display: flex;
+			flex-direction: column;
+		}
+		header {
+			display: flex;
+			justify-content: space-between;
+			padding: 12px 24px;
+			background-color: #f1f3f7;
+		}
+		.btn {
+			background-color: #162565;
+			color: #fff;
+			padding: 6px 12px;
+			border-radius: 4px;
+			font-size: 10px;
+			outline: none;
+			border: none;
+		}
+		.btn-lg {
+			background-color: #162565;
+			color: #fff;
+			padding: 10.25px 17.57px;
+			border-radius: 4px;
+			font-size: 12px;
+			outline: none;
+			border: none;
+		}
+		.main_message {
+			padding: 24px;
+		}
+
+		h1 {
+			font-size: 18px;
+		}
+		.message {
+			margin: 16px 0px;
+			font-size: 14px;
+		}
+		img.action {
+			width: 100%;
+		}
+		footer {
+			background-color: #f1f3f7;
+			display: flex;
+			flex-direction: column;
+			gap: 16px;
+			justify-content: center;
+			align-items: center;
+			margin-top: auto;
+			padding: 32px;
+		}
+		.footer_text {
+			font-size: 10px;
+		}
+		.download_container {
+			display: flex;
+			gap: 8px;
+		}
+		.social_container {
+			display: flex;
+			gap: 17.5px;
+		}
+	</style>
+	<body>
+		<header class="header">
+			<img src="./logo.svg" alt="Stranerd logo" />
+			<button class="btn">Login</button>
+		</header>
+
+		<main>
+			<div class="main_message">
+				<h1>Hello Jeremiah</h1>
+				<p class="message">
+					Stranerd classes are designed to give you the best class experience to
+					ensure you have everything you need for school in one plate.
+					<br />
+					<br />
+					Create a class today to collaborate with your coursemates.
+				</p>
+				<button class="btn-lg">Create a Class</button>
+			</div>
+
+			<img src="./infomative.png" alt="action  image" class="action" />
+		</main>
+
+		<footer>
+			<img src="./logo.svg" alt="Stranerd logo" />
+			<div class="download_container">
+				<a href="#">
+					<img src="./playStore.svg" alt="playStore Link" />
+				</a>
+				<a href="#">
+					<img src="./appStore.svg" alt="appStore Link" />
+				</a>
+			</div>
+			<div class="social_container">
+				<a href="#">
+					<img src="./icons/insta.svg" alt="instagram Link" />
+				</a>
+				<a href="#">
+					<img src="./icons/twitter.svg" alt="twitter Link" />
+				</a>
+				<a href="#">
+					<img src="./icons/youtube.svg" alt="youtube Link" />
+				</a>
+			</div>
+
+			<p class="footer_text">Unsubscribe or Change Email Preferences</p>
+			<p class="footer_text">Our mailing address is: support@stranerd.com</p>
+			<p class="footer_text">
+				Copyright (C) 2022 Stranerd LLC. All rights reserved.
+			</p>
+		</footer>
+	</body>
 </html>
